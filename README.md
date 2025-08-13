@@ -1,3 +1,18 @@
+# How to run this project
+
+Clone the repo: git clone 'reponame.git'
+
+Open the terminal:
+
+npm install
+npm run dev
+
+# Considerations
+
+Although it’s debatable and usually only relevant when using classes (and almost nobody uses classes in JS anymore), I decided to create an interface in each component folder and name it after the component, prefixed with “I”. This is the convention I follow, so every interface and every test is stored in the component’s folder.
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
