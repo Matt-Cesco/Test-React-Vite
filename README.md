@@ -11,7 +11,9 @@ npm run dev
 
 Although it’s debatable and usually only relevant when using classes (and almost nobody uses classes in JS anymore), I decided to create an interface in each component folder and name it after the component, prefixed with “I”. This is the convention I follow, so every interface and every test is stored in the component’s folder.
 
-
+I was running out of time so I didn't write any test (sorry for that). I tried tp structure the folder as best as I can by (for example) separating hooks from the App.tsx.
+I wanted to emprove the error handling for data coming back from the api. This is always helpful to debug the code.
+Fetching data from an api is less prone to error instead of using graphql but i believe is always a good practice to emprove the error handling and remove potential catastrofic issues
 
 # React + TypeScript + Vite
 
