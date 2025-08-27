@@ -28,13 +28,13 @@ const CocktailCard = ({ cocktail, fav, onToggle }: ICocktailCard) => {
                 }}
                 className={`absolute right-2 bottom-2 z-10 rounded-full px-2 py-1 text-sm border bg-white/90 ${fav ? "border-red-500 text-red-600" : ""}`}
             >
-                ♥
+                &hearts;
             </button>
 
             <Dialog>
                 <DialogTrigger asChild>
                     <button className="text-left w-full cursor-pointer">
-                        {img && <img src={img} alt={cocktail.strDrink} className="h-48 w-full object-cover " />}
+                        {img && <img src={img} alt={cocktail.strDrink} className="h-48 w-full object-cover" />}
                         <div className="p-3">
                             <div className="font-medium line-clamp-2 min-h-[3rem]">{cocktail.strDrink}</div>
                             <div className="text-sm text-gray-600 line-clamp-3 min-h-[3.5rem]">{desc || "No description"}</div>

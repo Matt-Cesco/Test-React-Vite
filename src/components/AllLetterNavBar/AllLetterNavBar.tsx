@@ -1,4 +1,3 @@
-// src/components/AllLetterNavBar.tsx
 import type IAllLetterNavBar from "./IAllLetterNavBar";
 
 const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
