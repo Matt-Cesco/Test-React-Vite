@@ -40,3 +40,14 @@ export const cocktailApi = createApi({
 });
 
 export const { useSearchByNameQuery, useSearchByLetterQuery, useLookupByIdQuery } = cocktailApi;
+
+// for runtime validation (without writing tests), is possible to generate Zod schemas from OpenAPI and validate responses at runtime (package is openapi-zod-client). 
+// In this way errors surface immediately without bespoke tests.
+// https://openapi-zod-client.vercel.app/
+// with codegen create types and interfacces from the schema
+
+// for cocktail for example, the trasnformedREspons can be something like this:
+
+// transformResponse: (raw: { drinks: RemoteDrink[] | null }) => ({
+//   drink: raw.drinks ? raw.drinks.map(toCocktail) : null,
+// })
